@@ -94,7 +94,7 @@ def functioning_calculator():
                         relief=RAISED,      
                         padx=25,            
                         text=labels[r][c],
-                        command=lambda: add(labels[r][c]))
+                        command=lambda val=labels[r][c] : add(val))
             # place label in row r and column c
             button.grid(row=r, column=c)
     root.mainloop()
