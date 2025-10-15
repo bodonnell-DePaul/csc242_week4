@@ -64,15 +64,15 @@ class MultiPack:
                     pady=10,  
                     text='It\'s the most wonderful time of the year!')
         
-        halloween01 = PhotoImage(file='images/halloween01.png')
-        halloween02 = PhotoImage(file='images/halloween02.png')
+        self.halloween01 = PhotoImage(file='images/halloween01.png')
+        self.halloween02 = PhotoImage(file='images/halloween02.png')
 
         halloween01Label = Label(master=self.root,
                    borderwidth=15,  
                    relief=RIDGE,   
-                   image=halloween01)
-    
-        halloween02Label = Label(master=self.root, image=halloween02)
+                   image=self.halloween01)
+
+        halloween02Label = Label(master=self.root, image=self.halloween02)
 
         btn = Button(master=self.root, text="Add Widget", command=self.add_widget)
         del_btn = Button(master=self.root, text="Delete Widget", command=self.remove_widget)
