@@ -249,8 +249,8 @@ class LayoutManagerDemo:
                 font=("Arial", 14, "bold")).place(x=10, y=10)
         
         # Absolute positioning
-        tk.Label(parent, text="Absolute position (x=50, y=50)", 
-                bg="yellow").place(x=50, y=50)
+        tk.Label(parent, text="Absolute position (x=150, y=50)", 
+                bg="yellow").place(x=150, y=50)
         
         # Relative positioning
         tk.Label(parent, text="Center (relx=0.5, rely=0.5)", 

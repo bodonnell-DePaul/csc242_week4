@@ -42,6 +42,8 @@ def multiPack():
 
     root.mainloop()
 
+multiPack()
+
 def non_functioning_calculator():
     root = Tk()
     labels = [['1', '2', '3'],     
@@ -75,9 +77,11 @@ def buttonIntro():
     button.pack()
     root.mainloop()
 
-def add(num):
+def double(num):
     try:
         number1 = eval(num)
+        showinfo("Function Double", message="{} doubled = {}".format(number1, number1*2))
+
     except:
         showinfo(message="You can only add numbers!")
 
@@ -94,7 +98,7 @@ def functioning_calculator():
                         relief=RAISED,      
                         padx=25,            
                         text=labels[r][c],
-                        command=lambda val=labels[r][c] : add(val))
+                        command=lambda val=labels[r][c] : double(val))
             # place label in row r and column c
             button.grid(row=r, column=c)
     root.mainloop()
